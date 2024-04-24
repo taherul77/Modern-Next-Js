@@ -1,11 +1,9 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
 const Hero = () => {
-    const handleScroll = ()=>{
-
-    }
+  const handleScroll = () => {};
   return (
     <div className="Hero">
       <div className="flex-1 pt-36 padding-x">
@@ -13,9 +11,26 @@ const Hero = () => {
           Find,Book or Rent a car quickly and easily!
         </h1>
         <p className="hero__subtitle">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quidem, illum at aut id enim possimus blanditiis doloribus? Recusandae, expedita.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          quidem, illum at aut id enim possimus blanditiis doloribus?
+          Recusandae, expedita.
         </p>
-        <CustomButton title="Expolore Car" containerStyles="bg-primary-blue text-white rounded-full mt-10" handleClick={handleScroll}/>
+        <CustomButton
+          title="Expolore Car"
+          containerStyles="bg-primary-blue text-white rounded-full mt-10"
+          handleClick={handleScroll}
+        />
+      </div>
+      <div className="hero__image-container">
+        <div className="hero__image">
+          <Image
+            src="/hero.png"
+            alt="hero"
+            fill
+            className="object-contain"
+          ></Image>
+          <div className="hero__image-overlay"/>
+        </div>
       </div>
     </div>
   );
