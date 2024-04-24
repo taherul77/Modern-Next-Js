@@ -1,7 +1,11 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
 const Hero = () => {
+    const handleScroll = ()=>{
+
+    }
   return (
     <div className="Hero">
       <div className="flex-1 pt-36 padding-x">
@@ -11,7 +15,7 @@ const Hero = () => {
         <p className="hero__subtitle">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quidem, illum at aut id enim possimus blanditiis doloribus? Recusandae, expedita.
         </p>
-        <CustomButton />
+        <CustomButton title="Expolore Car" containerStyles="bg-primary-blue text-white rounded-full mt-10" handleClick={handleScroll}/>
       </div>
     </div>
   );
